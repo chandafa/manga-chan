@@ -1,5 +1,6 @@
 "use client"
 import { GiHook } from "react-icons/gi"
+import { MdOutlineWebhook } from "react-icons/md";
 import { BiSearch } from "react-icons/bi"
 import { Navbar, NavbarContent, NavbarItem, Link, Button, Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, useDisclosure, Input } from "@nextui-org/react";
 import { useState } from "react";
@@ -7,10 +8,10 @@ import { useRouter } from "next/navigation";
 
 const NavbarComponent = ({ children }) => {
     return (
-        <Navbar maxWidth="full" className="bg-base-300 flex-1 sticky p-3 gap-3 shadow-xl">
+        <Navbar maxWidth="full" className="bg-gradient-to-tr from-red-800 to-red-600 flex-1 sticky p-3 gap-3 shadow-xl">
             <div className="h-full w-max flex  items-center gap-2" >
-                <GiHook className="text-red-400" size={25} />
-                <Link href="/" className="font-bold text-inherit text-white">Manga Hook</Link>
+                <MdOutlineWebhook className="text-red-400" size={25} />
+                <Link href="/" className="font-bold text-inherit text-white">Manga Chan</Link>
             </div>
             <NavbarContent className="w-full " justify="end">
                 {children}
